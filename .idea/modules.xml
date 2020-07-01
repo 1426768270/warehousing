@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://F:/QQ/mybatisplus_generator[代码生成器]/mybatisplus_generator/mybatisplus_generator.iml" filepath="F:/QQ/mybatisplus_generator[代码生成器]/mybatisplus_generator/mybatisplus_generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/warehousing/warehousing.iml" filepath="$PROJECT_DIR$/warehousing/warehousing.iml" />
+    </modules>
+  </component>
+</project>
