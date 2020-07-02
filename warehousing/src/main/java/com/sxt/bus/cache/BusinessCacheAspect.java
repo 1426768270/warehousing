@@ -7,6 +7,7 @@ import com.sxt.bus.domain.Provider;
 import com.sxt.bus.vo.CustomerVo;
 import com.sxt.bus.vo.GoodsVo;
 import com.sxt.bus.vo.ProviderVo;
+import com.sxt.sys.cache.CachePool;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -31,11 +32,8 @@ public class BusinessCacheAspect {
     private Log log = LogFactory.getLog(BusinessCacheAspect.class);
 
     //声明一个缓存容器
-    private Map<String,Object> CACHE_CONTAINER = new HashMap<>();
+    private Map<String,Object> CACHE_CONTAINER = CachePool.CACHE_CONTAINER;
 
-    public Map<String, Object> getCACHE_CONTAINER() {
-        return CACHE_CONTAINER;
-    }
 
     //声明切面表达式
     private static final String POINTCUT_CUSTOMER_UPDATE = "execution(* com.sxt.bus.service.impl.CustomerServiceImpl.updateById(..))";

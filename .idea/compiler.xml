@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="mybatisplus_generator" target="8" />
+      <module name="mybatisplus_generator" target="1.5" />
       <module name="warehousing" target="1.8" />
     </bytecodeTargetLevel>
   </component>

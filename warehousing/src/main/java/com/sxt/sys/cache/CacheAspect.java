@@ -27,11 +27,8 @@ public class CacheAspect {
     private Log log = LogFactory.getLog(CacheAspect.class);
 
     //声明一个缓存容器
-    private Map<String,Object> CACHE_CONTAINER = new HashMap<>();
+    private Map<String,Object> CACHE_CONTAINER = CachePool.CACHE_CONTAINER;
 
-    public Map<String, Object> getCACHE_CONTAINER() {
-        return CACHE_CONTAINER;
-    }
     //声明切面表达式
     private static final String POINTCUT_DEPT_UPDATE = "execution(* com.sxt.sys.service.impl.DeptServiceImpl.updateById(..))";
     private static final String POINTCUT_DEPT_ADD = "execution(* com.sxt.sys.service.impl.DeptServiceImpl.save(..))";

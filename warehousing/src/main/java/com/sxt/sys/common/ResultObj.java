@@ -30,7 +30,9 @@ public class ResultObj {
     //分配
     public static final ResultObj  DISPATCH_SUCCESS=new ResultObj(Constast.OK, "分配成功");
     public static final ResultObj  DISPATCH_ERROR=new ResultObj(Constast.ERROR, "分配失败");
-
+    //退货
+    public static final ResultObj  OPERATE_SUCCESS=new ResultObj(Constast.OK, "操作成功");
+    public static final ResultObj  OPERATE_ERROR=new ResultObj(Constast.ERROR, "操作失败");
     private Integer code;
     private String msg;
 }
